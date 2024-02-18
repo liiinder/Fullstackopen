@@ -2,7 +2,7 @@ const Header = ({ name, id }) => {
     return <h2 id={id}>{name}</h2>
 }
 
-const Parts = ({parts}) => {
+const Parts = ({ parts }) => {
     return (
         <table>
             <tbody>
@@ -24,7 +24,7 @@ const Total = ({ parts }) => {
 
 const Courses = ({ courses }) => {
     return (
-        courses.map( course =>
+        courses.map(course =>
             <div key={course.id}>
                 <Header name={course.name} id={course.id} />
                 <Parts parts={course.parts} />
